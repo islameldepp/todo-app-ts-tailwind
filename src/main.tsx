@@ -12,12 +12,12 @@ createRoot(document.getElementById('root')!).render(
       domain="https://islameldeep.kinde.com"
       redirectUri={
         import.meta.env.MODE === 'production'
-          ? 'https://todo-app-ts-tailwind.vercel.app/'
+          ? 'https://todo-app-ts-tailwind.vercel.app'
           : 'http://localhost:5173'
       }
       logoutUri={
         import.meta.env.MODE === 'production'
-          ? 'https://todo-app-ts-tailwind.vercel.app/'
+          ? 'https://todo-app-ts-tailwind.vercel.app'
           : 'http://localhost:5173'
       }
     >
