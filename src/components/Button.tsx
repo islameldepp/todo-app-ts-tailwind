@@ -1,7 +1,7 @@
 import type { ReactNode } from 'react';
 
 type ButtonProps = {
-  onClick: () => Promise<void>;
+  onClick?: () => Promise<void>;
   buttonType?: 'primary' | 'secondary';
   children: ReactNode;
 };
