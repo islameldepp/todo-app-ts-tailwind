@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+/* 
 @media (max-height: 950px) {
   h1 {
     top: 5%;
@@ -29,5 +29,45 @@
 @media (max-height: 800px) {
   h1 {
     top: -3%;
+  }
+} */
+
+@media (max-height: 950px) {
+  .bg-heading {
+    top: 5%;
+  }
+}
+
+@media (max-height: 916px) {
+  .bg-heading {
+    top: 3.5%;
+  }
+}
+
+@media (max-height: 883px) {
+  .bg-heading {
+    top: 2.5%;
+  }
+}
+
+@media (max-height: 850px) {
+  .bg-heading {
+    top: 0%;
+  }
+}
+
+@media (max-height: 800px) {
+  .bg-heading {
+    top: -3%;
+  }
+}
+
+@layer utilities {
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 6px;
+  }
+  .scrollbar-thumb-gray-400::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 6px;
   }
 }
