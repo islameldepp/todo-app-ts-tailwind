@@ -10,8 +10,16 @@ createRoot(document.getElementById('root')!).render(
     <KindeProvider
       clientId="0b9dc4eeaee4470884b207c29a655532"
       domain="https://islameldeep.kinde.com"
-      redirectUri="http://localhost:5173"
-      logoutUri="http://localhost:5173"
+      redirectUri={
+        import.meta.env.MODE === 'production'
+          ? 'https://todo-app-ts-tailwind.vercel.app/'
+          : 'http://localhost:5173'
+      }
+      logoutUri={
+        import.meta.env.MODE === 'production'
+          ? 'https://todo-app-ts-tailwind.vercel.app/'
+          : 'http://localhost:5173'
+      }
     >
       <TodosContextProvider>
         <App />
